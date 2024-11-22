@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0422753A2CF0E9A700C3965B /* pantrixxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042275392CF0E9A700C3965B /* pantrixxApp.swift */; };
+		0422753C2CF0E9A700C3965B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422753B2CF0E9A700C3965B /* ContentView.swift */; };
+		0422753E2CF0E9A900C3965B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0422753D2CF0E9A900C3965B /* Assets.xcassets */; };
+		042275422CF0E9A900C3965B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042275412CF0E9A900C3965B /* Preview Assets.xcassets */; };
+		0422754C2CF0E9A900C3965B /* pantrixxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422754B2CF0E9A900C3965B /* pantrixxTests.swift */; };
+		042275562CF0E9AA00C3965B /* pantrixxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042275552CF0E9AA00C3965B /* pantrixxUITests.swift */; };
+		042275582CF0E9AA00C3965B /* pantrixxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042275572CF0E9AA00C3965B /* pantrixxUITestsLaunchTests.swift */; };
+		042275662CF0EB8000C3965B /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042275652CF0EB8000C3965B /* Tab.swift */; };
+		042275692CF0EBED00C3965B /* Recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042275682CF0EBED00C3965B /* Recipes.swift */; };
+		0422756B2CF0EC2400C3965B /* TabPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422756A2CF0EC2400C3965B /* TabPosition.swift */; };
+		0422756D2CF0EC3A00C3965B /* TabShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422756C2CF0EC3A00C3965B /* TabShape.swift */; };
+		0493C8CD2CF0EDDC00C3E1F2 /* Pantry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0493C8CC2CF0EDDC00C3E1F2 /* Pantry.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		042275482CF0E9A900C3965B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0422752E2CF0E9A700C3965B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 042275352CF0E9A700C3965B;
+			remoteInfo = pantrixx;
+		};
+		042275522CF0E9AA00C3965B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0422752E2CF0E9A700C3965B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 042275352CF0E9A700C3965B;
+			remoteInfo = pantrixx;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		042275362CF0E9A700C3965B /* pantrixx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pantrixx.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		042275392CF0E9A700C3965B /* pantrixxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pantrixxApp.swift; sourceTree = "<group>"; };
+		0422753B2CF0E9A700C3965B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0422753D2CF0E9A900C3965B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0422753F2CF0E9A900C3965B /* pantrixx.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = pantrixx.entitlements; sourceTree = "<group>"; };
+		042275412CF0E9A900C3965B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		042275472CF0E9A900C3965B /* pantrixxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pantrixxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0422754B2CF0E9A900C3965B /* pantrixxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pantrixxTests.swift; sourceTree = "<group>"; };
+		042275512CF0E9AA00C3965B /* pantrixxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pantrixxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		042275552CF0E9AA00C3965B /* pantrixxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pantrixxUITests.swift; sourceTree = "<group>"; };
+		042275572CF0E9AA00C3965B /* pantrixxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pantrixxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		042275652CF0EB8000C3965B /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		042275682CF0EBED00C3965B /* Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes.swift; sourceTree = "<group>"; };
+		0422756A2CF0EC2400C3965B /* TabPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPosition.swift; sourceTree = "<group>"; };
+		0422756C2CF0EC3A00C3965B /* TabShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabShape.swift; sourceTree = "<group>"; };
+		0493C8CC2CF0EDDC00C3E1F2 /* Pantry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pantry.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		042275332CF0E9A700C3965B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042275442CF0E9A900C3965B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0422754E2CF0E9AA00C3965B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0422752D2CF0E9A700C3965B = {
+			isa = PBXGroup;
+			children = (
+				042275382CF0E9A700C3965B /* pantrixx */,
+				0422754A2CF0E9A900C3965B /* pantrixxTests */,
+				042275542CF0E9AA00C3965B /* pantrixxUITests */,
+				042275372CF0E9A700C3965B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		042275372CF0E9A700C3965B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				042275362CF0E9A700C3965B /* pantrixx.app */,
+				042275472CF0E9A900C3965B /* pantrixxTests.xctest */,
+				042275512CF0E9AA00C3965B /* pantrixxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		042275382CF0E9A700C3965B /* pantrixx */ = {
+			isa = PBXGroup;
+			children = (
+				0422756E2CF0EC7600C3965B /* Pages */,
+				042275672CF0EBD700C3965B /* View */,
+				042275642CF0EB5F00C3965B /* Model */,
+				042275392CF0E9A700C3965B /* pantrixxApp.swift */,
+				0422753B2CF0E9A700C3965B /* ContentView.swift */,
+				0422753D2CF0E9A900C3965B /* Assets.xcassets */,
+				0422753F2CF0E9A900C3965B /* pantrixx.entitlements */,
+				042275402CF0E9A900C3965B /* Preview Content */,
+			);
+			path = pantrixx;
+			sourceTree = "<group>";
+		};
+		042275402CF0E9A900C3965B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				042275412CF0E9A900C3965B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0422754A2CF0E9A900C3965B /* pantrixxTests */ = {
+			isa = PBXGroup;
+			children = (
+				0422754B2CF0E9A900C3965B /* pantrixxTests.swift */,
+			);
+			path = pantrixxTests;
+			sourceTree = "<group>";
+		};
+		042275542CF0E9AA00C3965B /* pantrixxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				042275552CF0E9AA00C3965B /* pantrixxUITests.swift */,
+				042275572CF0E9AA00C3965B /* pantrixxUITestsLaunchTests.swift */,
+			);
+			path = pantrixxUITests;
+			sourceTree = "<group>";
+		};
+		042275642CF0EB5F00C3965B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				042275652CF0EB8000C3965B /* Tab.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		042275672CF0EBD700C3965B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				042275682CF0EBED00C3965B /* Recipes.swift */,
+				0422756A2CF0EC2400C3965B /* TabPosition.swift */,
+				0422756C2CF0EC3A00C3965B /* TabShape.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0422756E2CF0EC7600C3965B /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				0493C8CC2CF0EDDC00C3E1F2 /* Pantry.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		042275352CF0E9A700C3965B /* pantrixx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0422755B2CF0E9AA00C3965B /* Build configuration list for PBXNativeTarget "pantrixx" */;
+			buildPhases = (
+				042275322CF0E9A700C3965B /* Sources */,
+				042275332CF0E9A700C3965B /* Frameworks */,
+				042275342CF0E9A700C3965B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pantrixx;
+			productName = pantrixx;
+			productReference = 042275362CF0E9A700C3965B /* pantrixx.app */;
+			productType = "com.apple.product-type.application";
+		};
+		042275462CF0E9A900C3965B /* pantrixxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0422755E2CF0E9AA00C3965B /* Build configuration list for PBXNativeTarget "pantrixxTests" */;
+			buildPhases = (
+				042275432CF0E9A900C3965B /* Sources */,
+				042275442CF0E9A900C3965B /* Frameworks */,
+				042275452CF0E9A900C3965B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				042275492CF0E9A900C3965B /* PBXTargetDependency */,
+			);
+			name = pantrixxTests;
+			productName = pantrixxTests;
+			productReference = 042275472CF0E9A900C3965B /* pantrixxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		042275502CF0E9AA00C3965B /* pantrixxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 042275612CF0E9AA00C3965B /* Build configuration list for PBXNativeTarget "pantrixxUITests" */;
+			buildPhases = (
+				0422754D2CF0E9AA00C3965B /* Sources */,
+				0422754E2CF0E9AA00C3965B /* Frameworks */,
+				0422754F2CF0E9AA00C3965B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				042275532CF0E9AA00C3965B /* PBXTargetDependency */,
+			);
+			name = pantrixxUITests;
+			productName = pantrixxUITests;
+			productReference = 042275512CF0E9AA00C3965B /* pantrixxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0422752E2CF0E9A700C3965B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					042275352CF0E9A700C3965B = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					042275462CF0E9A900C3965B = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 042275352CF0E9A700C3965B;
+					};
+					042275502CF0E9AA00C3965B = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 042275352CF0E9A700C3965B;
+					};
+				};
+			};
+			buildConfigurationList = 042275312CF0E9A700C3965B /* Build configuration list for PBXProject "pantrixx" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0422752D2CF0E9A700C3965B;
+			productRefGroup = 042275372CF0E9A700C3965B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				042275352CF0E9A700C3965B /* pantrixx */,
+				042275462CF0E9A900C3965B /* pantrixxTests */,
+				042275502CF0E9AA00C3965B /* pantrixxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		042275342CF0E9A700C3965B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042275422CF0E9A900C3965B /* Preview Assets.xcassets in Resources */,
+				0422753E2CF0E9A900C3965B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042275452CF0E9A900C3965B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0422754F2CF0E9AA00C3965B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		042275322CF0E9A700C3965B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042275662CF0EB8000C3965B /* Tab.swift in Sources */,
+				0422753C2CF0E9A700C3965B /* ContentView.swift in Sources */,
+				0422753A2CF0E9A700C3965B /* pantrixxApp.swift in Sources */,
+				0422756D2CF0EC3A00C3965B /* TabShape.swift in Sources */,
+				0493C8CD2CF0EDDC00C3E1F2 /* Pantry.swift in Sources */,
+				042275692CF0EBED00C3965B /* Recipes.swift in Sources */,
+				0422756B2CF0EC2400C3965B /* TabPosition.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042275432CF0E9A900C3965B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0422754C2CF0E9A900C3965B /* pantrixxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0422754D2CF0E9AA00C3965B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042275582CF0E9AA00C3965B /* pantrixxUITestsLaunchTests.swift in Sources */,
+				042275562CF0E9AA00C3965B /* pantrixxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		042275492CF0E9A900C3965B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 042275352CF0E9A700C3965B /* pantrixx */;
+			targetProxy = 042275482CF0E9A900C3965B /* PBXContainerItemProxy */;
+		};
+		042275532CF0E9AA00C3965B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 042275352CF0E9A700C3965B /* pantrixx */;
+			targetProxy = 042275522CF0E9AA00C3965B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		042275592CF0E9AA00C3965B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0422755A2CF0E9AA00C3965B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		0422755C2CF0E9AA00C3965B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = pantrixx/pantrixx.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"pantrixx/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nph.pantrixx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0422755D2CF0E9AA00C3965B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = pantrixx/pantrixx.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"pantrixx/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nph.pantrixx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0422755F2CF0E9AA00C3965B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nph.pantrixxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pantrixx.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/pantrixx";
+			};
+			name = Debug;
+		};
+		042275602CF0E9AA00C3965B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nph.pantrixxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pantrixx.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/pantrixx";
+			};
+			name = Release;
+		};
+		042275622CF0E9AA00C3965B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nph.pantrixxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = pantrixx;
+			};
+			name = Debug;
+		};
+		042275632CF0E9AA00C3965B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nph.pantrixxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = pantrixx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		042275312CF0E9A700C3965B /* Build configuration list for PBXProject "pantrixx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042275592CF0E9AA00C3965B /* Debug */,
+				0422755A2CF0E9AA00C3965B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0422755B2CF0E9AA00C3965B /* Build configuration list for PBXNativeTarget "pantrixx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0422755C2CF0E9AA00C3965B /* Debug */,
+				0422755D2CF0E9AA00C3965B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0422755E2CF0E9AA00C3965B /* Build configuration list for PBXNativeTarget "pantrixxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0422755F2CF0E9AA00C3965B /* Debug */,
+				042275602CF0E9AA00C3965B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		042275612CF0E9AA00C3965B /* Build configuration list for PBXNativeTarget "pantrixxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042275622CF0E9AA00C3965B /* Debug */,
+				042275632CF0E9AA00C3965B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0422752E2CF0E9A700C3965B /* Project object */;
+}
