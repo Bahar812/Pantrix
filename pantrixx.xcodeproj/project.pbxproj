@@ -19,6 +19,7 @@
 		0422756B2CF0EC2400C3965B /* TabPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422756A2CF0EC2400C3965B /* TabPosition.swift */; };
 		0422756D2CF0EC3A00C3965B /* TabShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422756C2CF0EC3A00C3965B /* TabShape.swift */; };
 		0493C8CD2CF0EDDC00C3E1F2 /* Pantry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0493C8CC2CF0EDDC00C3E1F2 /* Pantry.swift */; };
+		0493C8CF2CF1164100C3E1F2 /* AddPantry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0493C8CE2CF1164100C3E1F2 /* AddPantry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		0422756A2CF0EC2400C3965B /* TabPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPosition.swift; sourceTree = "<group>"; };
 		0422756C2CF0EC3A00C3965B /* TabShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabShape.swift; sourceTree = "<group>"; };
 		0493C8CC2CF0EDDC00C3E1F2 /* Pantry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pantry.swift; sourceTree = "<group>"; };
+		0493C8CE2CF1164100C3E1F2 /* AddPantry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPantry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				0493C8CC2CF0EDDC00C3E1F2 /* Pantry.swift */,
+				0493C8CE2CF1164100C3E1F2 /* AddPantry.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				042275662CF0EB8000C3965B /* Tab.swift in Sources */,
+				0493C8CF2CF1164100C3E1F2 /* AddPantry.swift in Sources */,
 				0422753C2CF0E9A700C3965B /* ContentView.swift in Sources */,
 				0422753A2CF0E9A700C3965B /* pantrixxApp.swift in Sources */,
 				0422756D2CF0EC3A00C3965B /* TabShape.swift in Sources */,

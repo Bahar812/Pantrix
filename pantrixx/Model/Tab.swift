@@ -23,7 +23,7 @@ enum Tab: String, CaseIterable {
         case .pantry:
             return "refrigerator.fill"
         case .shoppinglist:
-            return "cart.badge.plus"
+            return "cart.badge.plus.fill"
         case .profile:
             return "person.circle.fill"
         }

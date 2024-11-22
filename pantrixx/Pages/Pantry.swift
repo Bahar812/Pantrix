@@ -20,6 +20,7 @@ struct FoodItem: Identifiable {
 }
 
 struct Pantry: View {
+    @State private var isAddPantryPresented: Bool = false
     let foodCategories: [FoodCategory] = [
         FoodCategory(name: "All", count: 10),
         FoodCategory(name: "Vegetables", count: 3),
@@ -35,7 +36,7 @@ struct Pantry: View {
     var body: some View {
         NavigationView {
             ScrollView{
-                VStack(alignment: .leading, spacing: 16){
+                VStack(alignment: .leading, spacing: 5){
                     ScrollView(.horizontal, showsIndicators: false){
                         HStack(spacing: 10) {
                             ForEach(foodCategories) { category in
@@ -177,6 +178,37 @@ struct Pantry: View {
                 }
             }
             .navigationTitle("My Kitchen")
+            .overlay(
+                         Button(action: {
+                             // Add action for the button
+                             isAddPantryPresented.toggle()
+                         }) {
+                             Image(systemName: "plus.circle.fill")
+                                 .font(.system(size: 40))
+                                 .foregroundColor(.white)
+                                 .padding()
+                                 .background(Circle().fill(Color(red: 0.06274509803921569, green: 0.5058823529411764, blue: 0.2823529411764706)))
+                                 .shadow(radius: 10)
+                         }
+                         // Position it towards the bottom
+                            .padding(.trailing, 20) // Position it towards the right side
+                         , alignment: .bottomTrailing
+            )
+            .sheet(isPresented: $isAddPantryPresented) {
+                AddPantry() // Make sure AddPantry is a valid view
+            }
+            //            .toolbar{
+            //                ToolbarItem(placement: .navigationBarTrailing) {
+//                    Button(action: {
+//                        // Add the edit functionality here
+//                        print("Edit button tapped")
+//                    }) {
+//                        Image(systemName: "pencil.and.ellipsis.rectangle")
+//                            .font(.title2)
+//                            .foregroundColor(.blue)
+//                    }
+//                }
+//            }
         }
         
         
