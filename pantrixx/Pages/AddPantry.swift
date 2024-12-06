@@ -14,7 +14,7 @@ struct AddPantry: View {
     // Dropdown options
     let typeQuantities = ["kg", "unit", "liters"]
     let typeIngredients = ["Vegetable", "Protein", "Fruit", "Drink"]
-
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -40,8 +40,7 @@ struct AddPantry: View {
             .navigationBarTitleDisplayMode(.inline)
         }
     }
-
-    // Manually add ingredients
+    
     var manuallyAddView: some View {
         ScrollView {
             VStack(spacing: 16) {
@@ -58,7 +57,7 @@ struct AddPantry: View {
                 }
                 .padding(.horizontal)
                 .padding(.vertical, 20)
-
+                
                 // Image Picker
                 Button(action: {
                     isImagePickerPresented = true
@@ -88,20 +87,21 @@ struct AddPantry: View {
                 .sheet(isPresented: $isImagePickerPresented) {
                     ImagePicker(image: $image)
                 }
-
+                
                 // Input Fields
                 VStack(spacing: 20) {
                     TextField("Name Ingredient", text: $nameIngredient)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
-
+                    
                     HStack {
                         TextField("Quantity", text: $quantity)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                             .frame(maxWidth: .infinity)
-
+                        
                         Picker("Type Quantity", selection: $typeQuantity) {
                             ForEach(typeQuantities, id: \.self) { type in
                                 Text(type).tag(type)
+                                    .foregroundColor(.black) // Ganti warna teks dropdown menjadi hitam
                             }
                         }
                         .pickerStyle(MenuPickerStyle())
@@ -111,10 +111,11 @@ struct AddPantry: View {
                                 .stroke(Color.gray.opacity(0.5))
                         )
                     }
-
+                    
                     Picker("Type Ingredient", selection: $typeIngredient) {
                         ForEach(typeIngredients, id: \.self) { type in
                             Text(type).tag(type)
+                                .foregroundColor(.black) // Ganti warna teks dropdown menjadi hitam
                         }
                     }
                     .pickerStyle(MenuPickerStyle())
@@ -123,7 +124,7 @@ struct AddPantry: View {
                         RoundedRectangle(cornerRadius: 5)
                             .stroke(Color.gray.opacity(0.5))
                     )
-
+                    
                     // Date Picker
                     DatePicker("Date Expired", selection: $dateExpired, displayedComponents: .date)
                         .datePickerStyle(.compact)
@@ -134,7 +135,7 @@ struct AddPantry: View {
                         )
                 }
                 .padding(.horizontal)
-
+                
                 // Add Item Button
                 Button(action: {
                     let formatter = DateFormatter()
@@ -151,9 +152,20 @@ struct AddPantry: View {
                         .cornerRadius(10)
                 }
                 .padding(.horizontal)
+                .padding(.top, 20) // Tambahkan padding untuk geser tombol ke bawah
             }
             .padding()
         }
+//        .navigationBarItems(
+//            leading: Button(action: {
+//                // Aksi ketika tombol Cancel ditekan
+//                print("Cancel tapped")
+//            }) {
+//                Text("Cancel")
+//                    .foregroundColor(.blue) // Warna tombol Cancel
+//            }
+//
+//        )
     }
 }
 
@@ -180,8 +192,8 @@ struct ImagePicker: UIViewControllerRepresentable {
         }
 
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
-            if let image = info[.originalImage] as? UIImage {
-                parent.image = image
+            if let selectedImage = info[.originalImage] as? UIImage {
+                parent.image = selectedImage
             }
             picker.dismiss(animated: true)
         }
@@ -193,66 +205,29 @@ struct ImagePicker: UIViewControllerRepresentable {
 }
 
 struct ScanItemView: View {
-    @Environment(\.dismiss) var dismiss
     var onScanComplete: (String, String) -> Void
 
     var body: some View {
-        CameraScanner { detectedText, barcode in
-            let itemName = detectedText ?? "Unknown Item"
-            let quantity = barcode ?? "1" // Default quantity
-            onScanComplete(itemName, quantity)
+        VStack {
+            Text("Scanning Item...")
+                .font(.title)
+                .padding()
+            Text("This is where scanning logic would go.")
+                .font(.subheadline)
+                .padding()
+            Button(action: {
+                // Simulasi hasil scan
+                onScanComplete("Sample Item", "2")
+            }) {
+                Text("Simulate Scan")
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color.blue)
+                    .cornerRadius(10)
+            }
         }
-        .edgesIgnoringSafeArea(.all)
-    }
-}
-
-struct CameraScanner: UIViewControllerRepresentable {
-    var onDetect: (String?, String?) -> Void
-
-    func makeUIViewController(context: Context) -> ScannerViewController {
-        let vc = ScannerViewController()
-        vc.onDetect = onDetect
-        return vc
-    }
-
-    func updateUIViewController(_ uiViewController: ScannerViewController, context: Context) {}
-}
-
-class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
-    var onDetect: ((String?, String?) -> Void)?
-
-    private let session = AVCaptureSession()
-    private let metadataOutput = AVCaptureMetadataOutput()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        guard let videoCaptureDevice = AVCaptureDevice.default(for: .video) else { return }
-        let videoInput = try? AVCaptureDeviceInput(device: videoCaptureDevice)
-        if session.canAddInput(videoInput!) {
-            session.addInput(videoInput!)
-        }
-
-        if session.canAddOutput(metadataOutput) {
-            session.addOutput(metadataOutput)
-            metadataOutput.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
-            metadataOutput.metadataObjectTypes = [.ean8, .ean13, .pdf417]
-        }
-
-        let previewLayer = AVCaptureVideoPreviewLayer(session: session)
-        previewLayer.frame = view.layer.bounds
-        previewLayer.videoGravity = .resizeAspectFill
-        view.layer.addSublayer(previewLayer)
-
-        session.startRunning()
-    }
-
-    func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
-        session.stopRunning()
-
-        if let metadataObject = metadataObjects.first as? AVMetadataMachineReadableCodeObject {
-            onDetect?(nil, metadataObject.stringValue)
-        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.gray.opacity(0.1))
     }
 }
 

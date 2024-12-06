@@ -1,18 +1,18 @@
-//
-//  +View.swift
-//  pantrixx
-//
-//  Created by MacBook Pro on 25/11/24.
-//
-
 import SwiftUI
 
-struct _View: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+extension View {
+    @ViewBuilder
+    func hSpacing(_ alignment: Alignment) -> some View {
+        self.frame(maxWidth: .infinity, alignment: alignment)
+    }
+    
+    func vSpacing(_ alignment: Alignment) -> some View {
+        self.frame(maxHeight: .infinity, alignment: alignment)
     }
 }
 
-#Preview {
-    _View()
+// checking two dates are same
+
+func isSameDate(_ date1 : Date, _  date2: Date) -> Bool{
+    return Calendar.current.isDate(date1, inSameDayAs: date2)
 }

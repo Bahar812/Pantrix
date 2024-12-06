@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041BEE9E2CF5973D00E36E8E /* PageRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BEE9D2CF5973D00E36E8E /* PageRecipes.swift */; };
+		041BEEA02CF5A01300E36E8E /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BEE9F2CF5A01300E36E8E /* ShoppingList.swift */; };
+		041BEEA22CF5AB9400E36E8E /* AddShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BEEA12CF5AB9400E36E8E /* AddShoppingList.swift */; };
+		041BEEAB2D00AF3600E36E8E /* ShoppingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BEEAA2D00AF3600E36E8E /* ShoppingController.swift */; };
+		041BEEBC2D015FEF00E36E8E /* ShopList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 041BEEBA2D015FEF00E36E8E /* ShopList.xcdatamodeld */; };
 		0422753A2CF0E9A700C3965B /* pantrixxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042275392CF0E9A700C3965B /* pantrixxApp.swift */; };
 		0422753C2CF0E9A700C3965B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422753B2CF0E9A700C3965B /* ContentView.swift */; };
 		0422753E2CF0E9A900C3965B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0422753D2CF0E9A900C3965B /* Assets.xcassets */; };
@@ -20,6 +25,11 @@
 		0422756D2CF0EC3A00C3965B /* TabShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422756C2CF0EC3A00C3965B /* TabShape.swift */; };
 		0493C8CD2CF0EDDC00C3E1F2 /* Pantry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0493C8CC2CF0EDDC00C3E1F2 /* Pantry.swift */; };
 		0493C8CF2CF1164100C3E1F2 /* AddPantry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0493C8CE2CF1164100C3E1F2 /* AddPantry.swift */; };
+		0493C8D32CF4C03A00C3E1F2 /* MealPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0493C8D22CF4C03A00C3E1F2 /* MealPlan.swift */; };
+		0493C8D52CF4C35300C3E1F2 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0493C8D42CF4C35300C3E1F2 /* Task.swift */; };
+		0493C8D72CF4C66100C3E1F2 /* +View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0493C8D62CF4C66100C3E1F2 /* +View.swift */; };
+		0493C8D92CF4C6EB00C3E1F2 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0493C8D82CF4C6EB00C3E1F2 /* DateExtension.swift */; };
+		0493C8DB2CF4F26300C3E1F2 /* AddMealPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0493C8DA2CF4F26300C3E1F2 /* AddMealPlan.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +50,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		041BEE9D2CF5973D00E36E8E /* PageRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageRecipes.swift; sourceTree = "<group>"; };
+		041BEE9F2CF5A01300E36E8E /* ShoppingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; };
+		041BEEA12CF5AB9400E36E8E /* AddShoppingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddShoppingList.swift; sourceTree = "<group>"; };
+		041BEEAA2D00AF3600E36E8E /* ShoppingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingController.swift; sourceTree = "<group>"; };
+		041BEEBB2D015FEF00E36E8E /* ShopList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShopList.xcdatamodel; sourceTree = "<group>"; };
 		042275362CF0E9A700C3965B /* pantrixx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pantrixx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		042275392CF0E9A700C3965B /* pantrixxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pantrixxApp.swift; sourceTree = "<group>"; };
 		0422753B2CF0E9A700C3965B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +72,11 @@
 		0422756C2CF0EC3A00C3965B /* TabShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabShape.swift; sourceTree = "<group>"; };
 		0493C8CC2CF0EDDC00C3E1F2 /* Pantry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pantry.swift; sourceTree = "<group>"; };
 		0493C8CE2CF1164100C3E1F2 /* AddPantry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPantry.swift; sourceTree = "<group>"; };
+		0493C8D22CF4C03A00C3E1F2 /* MealPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlan.swift; sourceTree = "<group>"; };
+		0493C8D42CF4C35300C3E1F2 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		0493C8D62CF4C66100C3E1F2 /* +View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+View.swift"; sourceTree = "<group>"; };
+		0493C8D82CF4C6EB00C3E1F2 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		0493C8DA2CF4F26300C3E1F2 /* AddMealPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMealPlan.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +104,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041BEEA92D00AEEE00E36E8E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				041BEEAA2D00AF3600E36E8E /* ShoppingController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		0422752D2CF0E9A700C3965B = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +135,7 @@
 		042275382CF0E9A700C3965B /* pantrixx */ = {
 			isa = PBXGroup;
 			children = (
+				041BEEA92D00AEEE00E36E8E /* Controller */,
 				0422756E2CF0EC7600C3965B /* Pages */,
 				042275672CF0EBD700C3965B /* View */,
 				042275642CF0EB5F00C3965B /* Model */,
@@ -148,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				042275652CF0EB8000C3965B /* Tab.swift */,
+				041BEEBA2D015FEF00E36E8E /* ShopList.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -167,6 +197,14 @@
 			children = (
 				0493C8CC2CF0EDDC00C3E1F2 /* Pantry.swift */,
 				0493C8CE2CF1164100C3E1F2 /* AddPantry.swift */,
+				0493C8D22CF4C03A00C3E1F2 /* MealPlan.swift */,
+				0493C8D42CF4C35300C3E1F2 /* Task.swift */,
+				0493C8D62CF4C66100C3E1F2 /* +View.swift */,
+				0493C8D82CF4C6EB00C3E1F2 /* DateExtension.swift */,
+				0493C8DA2CF4F26300C3E1F2 /* AddMealPlan.swift */,
+				041BEE9D2CF5973D00E36E8E /* PageRecipes.swift */,
+				041BEE9F2CF5A01300E36E8E /* ShoppingList.swift */,
+				041BEEA12CF5AB9400E36E8E /* AddShoppingList.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -302,12 +340,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				042275662CF0EB8000C3965B /* Tab.swift in Sources */,
+				0493C8D92CF4C6EB00C3E1F2 /* DateExtension.swift in Sources */,
 				0493C8CF2CF1164100C3E1F2 /* AddPantry.swift in Sources */,
+				0493C8D52CF4C35300C3E1F2 /* Task.swift in Sources */,
 				0422753C2CF0E9A700C3965B /* ContentView.swift in Sources */,
+				041BEEAB2D00AF3600E36E8E /* ShoppingController.swift in Sources */,
 				0422753A2CF0E9A700C3965B /* pantrixxApp.swift in Sources */,
 				0422756D2CF0EC3A00C3965B /* TabShape.swift in Sources */,
+				041BEEA02CF5A01300E36E8E /* ShoppingList.swift in Sources */,
+				0493C8D72CF4C66100C3E1F2 /* +View.swift in Sources */,
+				041BEE9E2CF5973D00E36E8E /* PageRecipes.swift in Sources */,
 				0493C8CD2CF0EDDC00C3E1F2 /* Pantry.swift in Sources */,
+				0493C8D32CF4C03A00C3E1F2 /* MealPlan.swift in Sources */,
 				042275692CF0EBED00C3965B /* Recipes.swift in Sources */,
+				041BEEA22CF5AB9400E36E8E /* AddShoppingList.swift in Sources */,
+				041BEEBC2D015FEF00E36E8E /* ShopList.xcdatamodeld in Sources */,
+				0493C8DB2CF4F26300C3E1F2 /* AddMealPlan.swift in Sources */,
 				0422756B2CF0EC2400C3965B /* TabPosition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,9 +513,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = pantrixx/pantrixx.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"pantrixx/Preview Content\"";
+				DEVELOPMENT_TEAM = 42M7H83CSC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -485,8 +535,9 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nph.pantrixx;
+				PRODUCT_BUNDLE_IDENTIFIER = "UC-ISB.pantrixx";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -501,9 +552,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = pantrixx/pantrixx.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"pantrixx/Preview Content\"";
+				DEVELOPMENT_TEAM = 42M7H83CSC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -521,8 +574,9 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nph.pantrixx;
+				PRODUCT_BUNDLE_IDENTIFIER = "UC-ISB.pantrixx";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -657,6 +711,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		041BEEBA2D015FEF00E36E8E /* ShopList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				041BEEBB2D015FEF00E36E8E /* ShopList.xcdatamodel */,
+			);
+			currentVersion = 041BEEBB2D015FEF00E36E8E /* ShopList.xcdatamodel */;
+			name = ShopList.xcdatamodeld;
+			path = /Users/mac/Desktop/pantrixx/pantrixx/Model/ShopList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0422752E2CF0E9A700C3965B /* Project object */;
 }
