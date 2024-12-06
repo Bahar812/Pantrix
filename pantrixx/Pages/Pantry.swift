@@ -67,15 +67,17 @@ struct Pantry: View {
                         .fontWeight(.medium)
                         .foregroundColor(.gray)
                         .padding(.horizontal)
-                    ScrollView(.horizontal, showsIndicators: false){
-                        HStack(spacing: 10){
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(spacing: 20) { // Increased spacing here
                             ForEach(foodItems) { item in
                                 VStack(alignment: .center) {
                                     ZStack(alignment: .top) {
                                         RoundedRectangle(cornerRadius: 15)
                                             .fill(Color.white)
                                             .shadow(color: .gray.opacity(0.1), radius: 10, x: 1, y: 1)
-                                            .frame(width: 120, height: 200)
+                                            .frame(width: 120, height: 200) 
+                                            .padding(.vertical, 10) // Added vertical padding
+
                                         VStack {
                                             // Priority Label
                                             Text("Priority")
@@ -87,7 +89,7 @@ struct Pantry: View {
                                                 .background(Color.orange)
                                                 .cornerRadius(5)
                                                 .padding(.top, 8)
-                                            
+
                                             // Food Image
                                             Image(item.image)
                                                 .resizable()
@@ -95,12 +97,13 @@ struct Pantry: View {
                                                 .frame(width: 80, height: 80)
                                                 .clipShape(Circle())
                                                 .padding(.top, 8)
+
                                             Text(item.name)
                                                 .font(.headline)
                                                 .fontWeight(.semibold)
                                                 .multilineTextAlignment(.center)
                                                 .padding(.horizontal, 20)
-                                            
+
                                             Text(item.age)
                                                 .font(.subheadline)
                                                 .foregroundColor(.gray)
@@ -108,32 +111,29 @@ struct Pantry: View {
                                                 .padding(.horizontal, 20)
                                                 .padding(.bottom, 20)
                                         }
-                                        
                                     }
-                                    
-                                    
-                                    
                                 }
                             }
                         }
                     }
-                    
+
                     
                     Text("Vegetables")
                         .font(.title2)
                         .fontWeight(.semibold)
                         .padding(.horizontal)
                     
-                   
-                    ScrollView(.horizontal, showsIndicators: false){
-                        HStack(spacing: 10){
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(spacing: 20) { // Increased spacing here
                             ForEach(foodItems) { item in
                                 VStack(alignment: .center) {
                                     ZStack(alignment: .top) {
                                         RoundedRectangle(cornerRadius: 15)
                                             .fill(Color.white)
                                             .shadow(color: .gray.opacity(0.1), radius: 10, x: 1, y: 1)
-                                            .frame(width: 120, height: 200)
+                                            .frame(width: 120, height: 200) // Card size
+                                            .padding(.vertical, 10) // Added vertical padding
+
                                         VStack {
                                             // Priority Label
 //                                            Text("Priority")
@@ -145,7 +145,9 @@ struct Pantry: View {
 //                                                .background(Color.orange)
 //                                                .cornerRadius(5)
 //                                                .padding(.top, 8)
-                                            
+
+                                            Spacer()
+                                                .frame(height: 20)
                                             // Food Image
                                             Image(item.image)
                                                 .resizable()
@@ -153,12 +155,13 @@ struct Pantry: View {
                                                 .frame(width: 80, height: 80)
                                                 .clipShape(Circle())
                                                 .padding(.top, 8)
+
                                             Text(item.name)
                                                 .font(.headline)
                                                 .fontWeight(.semibold)
                                                 .multilineTextAlignment(.center)
                                                 .padding(.horizontal, 20)
-                                            
+
                                             Text(item.age)
                                                 .font(.subheadline)
                                                 .foregroundColor(.gray)
@@ -166,30 +169,39 @@ struct Pantry: View {
                                                 .padding(.horizontal, 20)
                                                 .padding(.bottom, 20)
                                         }
-                                        
                                     }
-                                    
-                                    
-                                    
                                 }
                             }
                         }
+                    
+
                     }
                 }
             }
             .navigationTitle("My Kitchen")
             .overlay(
-                         Button(action: {
-                             // Add action for the button
-                             isAddPantryPresented.toggle()
-                         }) {
-                             Image(systemName: "plus.circle.fill")
-                                 .font(.system(size: 40))
-                                 .foregroundColor(.white)
-                                 .padding()
-                                 .background(Circle().fill(Color(red: 0.06274509803921569, green: 0.5058823529411764, blue: 0.2823529411764706)))
-                                 .shadow(radius: 10)
-                         }
+                Button(action: {
+                    isAddPantryPresented.toggle()
+                }) {
+                    Image(systemName: "plus")
+                        .font(.system(size: 24))
+                        .foregroundColor(.white)
+                        .frame(width: 66, height: 66)
+                        .background(Color.orange)
+                        .clipShape(Circle())
+                        .shadow(color: Color.orange.opacity(0.3), radius: 10, x: 0, y: 5)
+                }
+//                         Button(action: {
+//                             // Add action for the button
+//                             isAddPantryPresented.toggle()
+//                         }) {
+//                             Image(systemName: "plus.circle.fill")
+//                                 .font(.system(size: 40))
+//                                 .foregroundColor(.white)
+//                                 .padding()
+//                                 .background(Circle().fill(.orange))
+//                                 .shadow(radius: 10)
+//                         }
                          // Position it towards the bottom
                             .padding(.trailing, 20) // Position it towards the right side
                          , alignment: .bottomTrailing

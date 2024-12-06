@@ -20,12 +20,12 @@ struct Recipes: View {
     var body: some View {
         VStack(spacing:0){
             TabView(selection: $activeTab){
-                Text("Recipes")
+                PageRecipes()
                     .tag(Tab.recipes)
                     // Hiding Native Tab Bar
 //                    .toolbar(.hidden, for: .tabBar)
                 
-                Text("Meal Plan")
+                MealPlan()
                     .tag(Tab.mealplan)
                     // Hiding Native Tab Bar
 //                    .toolbar(.hidden, for: .tabBar)
@@ -35,7 +35,7 @@ struct Recipes: View {
                     // Hiding Native Tab Bar
 //                    .toolbar(.hidden, for: .tabBar)
                 
-                Text("Shopping List")
+                ShoppingList()
                     .tag(Tab.shoppinglist)
                     // Hiding Native Tab Bar
 //                    .toolbar(.hidden, for: .tabBar)
@@ -78,7 +78,6 @@ struct Recipes: View {
                 .blur(radius: 2)
                 .padding(.top, 25)
         })
-        // adding animation
         .animation(.interactiveSpring(response: 0.6, dampingFraction: 0.7 ,blendDuration: 0.7), value: activeTab)
     }
 }
